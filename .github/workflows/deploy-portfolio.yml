@@ -1,0 +1,21 @@
+name: Deploy portfolio to Synology
+
+on:
+  push:
+    branches:
+      - main  # <-- Rama específica para el portfolio
+
+jobs:
+  deploy:
+    name: Deploy portfolio
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute deployment script on server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            # Llamamos al mismo script, pero ahora con la ruta del portfolio
+            sh /volume1/proyectos/deploy.sh /volume1/proyectos/portfolio
