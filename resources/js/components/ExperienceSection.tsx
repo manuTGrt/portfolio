@@ -1,3 +1,4 @@
+import { SlidingNumber } from '@/components/animate-ui/text/sliding-number';
 import { Calendar, MapPin } from 'lucide-react';
 
 const experiences = [
@@ -169,15 +170,38 @@ export default function ExperienceSection() {
                 {/* Estadísticas adicionales */}
                 <div className="mt-16 grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
                     <div className="space-y-2">
-                        <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">3+</div>
+                        <div className="flex items-center justify-center text-3xl font-bold text-blue-600 dark:text-blue-400">
+                            <SlidingNumber
+                                number={3}
+                                inView={true}
+                                inViewOnce={false}
+                                className="text-3xl font-bold text-blue-600 dark:text-blue-400"
+                            />
+                            +
+                        </div>
                         <div className="text-sm text-gray-500 dark:text-gray-400">Años de Experiencia en Desarrollo Web</div>
                     </div>
                     <div className="space-y-2">
-                        <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">25+</div>
+                        <div className="flex items-center justify-center text-3xl font-bold text-blue-600 dark:text-blue-400">
+                            <SlidingNumber
+                                number={25}
+                                inView={true}
+                                inViewOnce={false}
+                                className="text-3xl font-bold text-blue-600 dark:text-blue-400"
+                            />
+                            +
+                        </div>
                         <div className="text-sm text-gray-500 dark:text-gray-400">Proyectos Completados</div>
                     </div>
                     <div className="space-y-2">
-                        <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">4</div>
+                        <div className="flex items-center justify-center text-3xl font-bold text-blue-600 dark:text-blue-400">
+                            <SlidingNumber
+                                number={4}
+                                inView={true}
+                                inViewOnce={false}
+                                className="text-3xl font-bold text-blue-600 dark:text-blue-400"
+                            />
+                        </div>
                         <div className="text-sm text-gray-500 dark:text-gray-400">Empresas</div>
                     </div>
                 </div>

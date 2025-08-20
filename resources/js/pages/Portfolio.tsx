@@ -15,13 +15,13 @@ export default function Portfolio() {
                     <ProjectsSection />
                 </AnimatedSection>
 
-                <AnimatedSection delay={200}>
+                <AnimatedSection delay={100}>
                     {' '}
                     {/* Delay ajustado */}
                     <ExperienceSection />
                 </AnimatedSection>
 
-                <AnimatedSection delay={300}>
+                <AnimatedSection delay={100}>
                     {' '}
                     {/* Delay ajustado */}
                     <SkillsSection />
