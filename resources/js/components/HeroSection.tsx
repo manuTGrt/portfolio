@@ -1,5 +1,3 @@
-'use client';
-
 import { useScrollReveal } from '@/hooks/use-scroll-reveal';
 
 export default function HeroSection() {
@@ -83,7 +81,7 @@ export default function HeroSection() {
                         <div className="relative">
                             <div className="h-80 w-80 overflow-hidden rounded-2xl border-2 border-gray-200 bg-gray-100 shadow-2xl lg:h-96 lg:w-96">
                                 <img
-                                    src="/placeholder.svg?height=400&width=400"
+                                    src="/IMG_0317_retrato.JPG?height=400&width=400"
                                     alt="Manuel Tejada Guzmán - Desarrollador Full-Stack"
                                     className="h-full w-full object-cover"
                                 />
