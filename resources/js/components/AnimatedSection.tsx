@@ -1,6 +1,6 @@
 import type React from "react"
 import type { ReactNode } from "react"
-import { useScrollReveal } from "@/Hooks/useScrollReveal"
+import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 
 interface AnimatedSectionProps {
   children: ReactNode
