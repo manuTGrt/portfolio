@@ -1,7 +1,7 @@
 // NUEVO ARCHIVO: resources/js/Layouts/PortfolioLayout.tsx
 
 import ScrollProgressBar from '@/components/ScrollProgressBar';
-import SmoothScrollProvider from '@/components/smooth-scroll-provider';
+import SmoothScrollProvider from '@/components/SmoothScrollProvider';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/sonner';
 import { Head } from '@inertiajs/react';

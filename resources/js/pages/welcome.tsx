@@ -1,9 +1,9 @@
 // resources/js/Pages/Welcome.jsx
 
-import AnimatedSection from '@/components/_animated-section';
-import HeroSection from '@/components/_hero-section';
+import AnimatedSection from '@/components/animated-section';
+import HeroSection from '@/components/HeroSection';
 import ExperienceSection from '@/components/ExperienceSection';
-import ProjectsSection from '@/components/projects-section';
+import ProjectsSection from '@/components/ProjectsSection';
 import SkillsSection from '@/components/SkillsSection';
 import PortfolioLayout from '@/layouts/portfolio-layout';
 

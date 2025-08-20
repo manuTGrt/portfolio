@@ -1,5 +1,3 @@
-'use client';
-
 import { motion, useInView, useSpring, useTransform, type MotionValue, type SpringOptions, type UseInViewOptions } from 'motion/react';
 import * as React from 'react';
 import useMeasure from 'react-use-measure';
