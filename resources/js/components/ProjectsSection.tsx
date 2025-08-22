@@ -146,7 +146,7 @@ export default function ProjectsSection() {
 
                 <div className="mt-12 flex justify-center">
                     <a
-                        href="https://github.com/manuel"
+                        href="https://github.com/manuTGrt"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex h-11 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium whitespace-nowrap ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
