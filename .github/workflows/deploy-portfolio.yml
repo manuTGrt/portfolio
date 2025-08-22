@@ -16,6 +16,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 2223
           script: |
             # Llamamos al mismo script, pero ahora con la ruta del portfolio
             sh /volume1/proyectos/deploy.sh /volume1/proyectos/portfolio
