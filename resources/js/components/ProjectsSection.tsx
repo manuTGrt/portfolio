@@ -5,58 +5,40 @@ import { ExternalLink, Github } from 'lucide-react';
 const projects = [
     {
         id: 1,
-        title: 'Sistema de Gestión Empresarial',
-        description: 'Aplicación web completa para gestión de inventarios, ventas y clientes con dashboard administrativo y reportes en tiempo real.',
-        image: '/placeholder.svg?height=300&width=400',
-        technologies: ['Laravel', 'PHP', 'MySQL', 'Bootstrap', 'JavaScript'],
-        githubUrl: 'https://github.com/manuel/proyecto1',
-        demoUrl: 'https://demo-proyecto1.com',
-    },
-    {
-        id: 2,
-        title: 'E-commerce Moderno',
+        title: 'E-commerce Versátil',
         description: 'Tienda online responsive con carrito de compras, pasarela de pagos integrada y panel de administración completo.',
         image: '/placeholder.svg?height=300&width=400',
         technologies: ['Laravel', 'React', 'Inertia.js', 'Tailwind CSS', 'Stripe'],
-        githubUrl: 'https://github.com/manuel/proyecto2',
-        demoUrl: 'https://demo-ecommerce.com',
+        githubUrl: null,
+        demoUrl: 'https://manutech-demo.ddns.net',
     },
-    {
-        id: 3,
-        title: 'App de Gestión de Tareas',
-        description: 'Aplicación móvil multiplataforma para gestión de proyectos y tareas con sincronización en tiempo real.',
-        image: '/placeholder.svg?height=300&width=400',
-        technologies: ['Flutter', 'Dart', 'Firebase', 'REST API'],
-        githubUrl: 'https://github.com/manuel/proyecto3',
-        demoUrl: 'https://play.google.com/store/apps/details?id=com.manuel.tasks',
-    },
-    {
-        id: 4,
-        title: 'Dashboard Analítico',
-        description: 'Panel de control con visualización de datos, gráficos interactivos y reportes automatizados para análisis empresarial.',
-        image: '/placeholder.svg?height=300&width=400',
-        technologies: ['Laravel', 'Vue.js', 'Chart.js', 'MySQL', 'Redis'],
-        githubUrl: 'https://github.com/manuel/proyecto4',
-        demoUrl: 'https://demo-dashboard.com',
-    },
-    {
-        id: 5,
-        title: 'Sistema de Reservas',
-        description: 'Plataforma de reservas online con calendario interactivo, notificaciones automáticas y gestión de disponibilidad.',
-        image: '/placeholder.svg?height=300&width=400',
-        technologies: ['Laravel', 'JavaScript', 'FullCalendar', 'Bootstrap', 'MySQL'],
-        githubUrl: 'https://github.com/manuel/proyecto5',
-        demoUrl: 'https://demo-reservas.com',
-    },
-    {
-        id: 6,
-        title: 'API REST Escalable',
-        description: 'API robusta con autenticación JWT, documentación automática y arquitectura modular para aplicaciones empresariales.',
-        image: '/placeholder.svg?height=300&width=400',
-        technologies: ['Laravel', 'PHP', 'JWT', 'Swagger', 'Docker'],
-        githubUrl: 'https://github.com/manuel/proyecto6',
-        demoUrl: 'https://api-docs.demo.com',
-    },
+    // {
+    //     id: 3,
+    //     title: 'App de Gestión de Tareas',
+    //     description: 'Aplicación móvil multiplataforma para gestión de proyectos y tareas con sincronización en tiempo real.',
+    //     image: '/placeholder.svg?height=300&width=400',
+    //     technologies: ['Flutter', 'Dart', 'Firebase', 'REST API'],
+    //     githubUrl: 'https://github.com/manuel/proyecto3',
+    //     demoUrl: 'https://play.google.com/store/apps/details?id=com.manuel.tasks',
+    // },
+    // {
+    //     id: 4,
+    //     title: 'Dashboard Analítico',
+    //     description: 'Panel de control con visualización de datos, gráficos interactivos y reportes automatizados para análisis empresarial.',
+    //     image: '/placeholder.svg?height=300&width=400',
+    //     technologies: ['Laravel', 'Vue.js', 'Chart.js', 'MySQL', 'Redis'],
+    //     githubUrl: 'https://github.com/manuel/proyecto4',
+    //     demoUrl: 'https://demo-dashboard.com',
+    // },
+    // {
+    //     id: 5,
+    //     title: 'Sistema de Reservas',
+    //     description: 'Plataforma de reservas online con calendario interactivo, notificaciones automáticas y gestión de disponibilidad.',
+    //     image: '/placeholder.svg?height=300&width=400',
+    //     technologies: ['Laravel', 'JavaScript', 'FullCalendar', 'Bootstrap', 'MySQL'],
+    //     githubUrl: 'https://github.com/manuel/proyecto5',
+    //     demoUrl: 'https://demo-reservas.com',
+    // },
 ];
 
 export default function ProjectsSection() {
@@ -84,15 +66,19 @@ export default function ProjectsSection() {
                                     className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
                                 />
                                 <div className="absolute inset-0 flex items-center justify-center gap-4 bg-black/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <a
-                                        href={project.githubUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex h-9 items-center justify-center rounded-md bg-secondary px-3 text-sm font-medium whitespace-nowrap text-secondary-foreground ring-offset-background transition-colors hover:bg-secondary/80 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
-                                    >
-                                        <Github className="mr-2 h-4 w-4" />
-                                        Código
-                                    </a>
+                                    {project.githubUrl != null ? (
+                                        <a
+                                            href={project.githubUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex h-9 items-center justify-center rounded-md bg-secondary px-3 text-sm font-medium whitespace-nowrap text-secondary-foreground ring-offset-background transition-colors hover:bg-secondary/80 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
+                                        >
+                                            <Github className="mr-2 h-4 w-4" />
+                                            Código
+                                        </a>
+                                    ) : (
+                                        <></>
+                                    )}
                                     <a
                                         href={project.demoUrl}
                                         target="_blank"
@@ -121,15 +107,19 @@ export default function ProjectsSection() {
                             </CardContent>
 
                             <CardFooter className="flex gap-2 pt-0">
-                                <a
-                                    href={project.githubUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex h-9 flex-1 items-center justify-center rounded-md border border-input bg-background px-3 text-sm font-medium whitespace-nowrap ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
-                                >
-                                    <Github className="mr-2 h-4 w-4" />
-                                    GitHub
-                                </a>
+                                {project.githubUrl != null ? (
+                                    <a
+                                        href={project.githubUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex h-9 flex-1 items-center justify-center rounded-md border border-input bg-background px-3 text-sm font-medium whitespace-nowrap ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
+                                    >
+                                        <Github className="mr-2 h-4 w-4" />
+                                        GitHub
+                                    </a>
+                                ) : (
+                                    <></>
+                                )}
                                 <a
                                     href={project.demoUrl}
                                     target="_blank"
