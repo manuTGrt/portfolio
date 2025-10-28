@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import { Briefcase, Code, Menu, Moon, Sun, User, X } from 'lucide-react';
+import { Brain, Briefcase, Code, Menu, Moon, Sun, User, X } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { useEffect, useRef, useState } from 'react';
 
@@ -47,11 +47,6 @@ export default function FloatingMenu() {
 
     const menuItems = [
         {
-            label: 'Proyectos',
-            icon: <Briefcase className="h-4 w-4" />,
-            action: () => scrollToSection('proyectos'),
-        },
-        {
             label: 'Experiencia',
             icon: <User className="h-4 w-4" />,
             action: () => scrollToSection('experiencia'),
@@ -60,6 +55,16 @@ export default function FloatingMenu() {
             label: 'Habilidades',
             icon: <Code className="h-4 w-4" />,
             action: () => scrollToSection('habilidades'),
+        },
+        {
+            label: 'Proyectos',
+            icon: <Briefcase className="h-4 w-4" />,
+            action: () => scrollToSection('proyectos'),
+        },
+        {
+            label: 'Mentalidad',
+            icon: <Brain className="h-4 w-4" />,
+            action: () => scrollToSection('mentalidad'),
         },
     ];
 

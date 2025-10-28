@@ -48,7 +48,7 @@ const softSkills = [
 
 export default function SoftSkillsSection() {
     return (
-        <section id="mentalidad" className="flex min-h-screen items-center justify-center bg-gray-50 dark:bg-gray-800">
+        <section id="mentalidad" className="flex min-h-screen items-center justify-center bg-gray-50 pt-20 dark:bg-gray-900">
             <div className="container px-4 md:px-6">
                 <div className="mb-16 flex flex-col items-center justify-center space-y-4 text-center">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Mentalidad y Enfoque</h2>
