@@ -86,7 +86,7 @@ const getSkillIcon = (skillName: string): JSX.Element => {
 
 export default function SkillsSection() {
     return (
-        <section id="habilidades" className="flex min-h-screen items-center justify-center bg-white py-20 dark:bg-gray-900">
+        <section id="habilidades" className="flex min-h-screen items-center justify-center bg-white pt-20 dark:bg-gray-900">
             <div className="container px-4 md:px-6">
                 <div className="mb-16 flex flex-col items-center justify-center space-y-4 text-center">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Habilidades Técnicas</h2>

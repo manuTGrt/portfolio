@@ -78,7 +78,7 @@ const experiences = [
 
 export default function ExperienceSection() {
     return (
-        <section id="experiencia" className="flex min-h-screen items-center justify-center bg-white pt-20 dark:bg-gray-900">
+        <section id="experiencia" className="flex min-h-screen items-center justify-center bg-white dark:bg-gray-900">
             <div className="container mx-auto max-w-7xl px-4 md:px-6">
                 <div className="mb-16 flex flex-col items-center justify-center space-y-4 text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl dark:text-white">

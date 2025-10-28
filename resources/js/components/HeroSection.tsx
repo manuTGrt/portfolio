@@ -43,7 +43,7 @@ export default function HeroSection() {
                                     descriptionReveal.isInView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                                 }`}
                             >
-                                Desarrollador con más de 2 años de experiencia profesional construyendo aplicaciones web completas. Especializado en
+                                Desarrollador con más de 3 años de experiencia profesional construyendo aplicaciones web completas. Especializado en
                                 Laravel, PHP, JavaScript y tecnologías modernas del ecosistema web. Apasionado por crear soluciones eficientes y
                                 escalables.
                             </p>
